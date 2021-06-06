@@ -14,15 +14,16 @@ func main(){
 
 	fmt.Println(soma, subtracao, divisao, restoDaDivisao)
 
+	//Uma variável de um tipo não pode interagir com outra de outra tipo
 	// var numero1 int16 = 10
 	// var numero2 int32 = 25
-	//soma := numero1 + int16(numero2)  não pode porque são tipos diferentes int16 e int32
+	// soma := numero1 + int16(numero2)  //não pode porque são tipos diferentes int16 e int32
 
 
 
 	//OPERADORES DE ATRIBUIÇÃO
-	var variavel string = "String"
-	variavel2 := "String2"
+	var variavel string = "String"  //declaração tipada
+	variavel2 := "String2"  //inferência de tipo
 
 	fmt.Println(variavel, variavel2)
 
@@ -34,6 +35,10 @@ func main(){
 	fmt.Println(1<2)
 	fmt.Println(1<=2)
 	fmt.Println(1!= 2)
+
+
+	//fmt.Println(1=="1")  //vai dar erro (ainda bem) porque você está comparando tipos diferentes
+
 
 	fmt.Println("----------")
 
@@ -72,6 +77,12 @@ func main(){
 		texto= "Menor que 5"
 	}
 	println(texto)
+
+
+
+
+
+
 
 
 }

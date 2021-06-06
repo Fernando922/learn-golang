@@ -28,4 +28,8 @@ func main(){
 
 	e1 := estudante{p1, "Engenharia", "USP"}
 	fmt.Println(e1.nome)
+
+
+	e2 := estudante{pessoa{"Fernando", "de Paula", 29,175}, "Analise de Sistemas", "Fatec" }
+	fmt.Println(e2.sobrenome)
 }

@@ -5,6 +5,7 @@ import "fmt"
 
 func diaDaSemana1(numero int)string{
 
+	//nâo precisa colocar o break depois de cada return
 	switch numero {
 	case 1:
 		return "Domingo"
@@ -26,7 +27,6 @@ func diaDaSemana1(numero int)string{
 
 }
 
-//NAO PRECISA USAR O BREAK
 
 func diaDaSemana2(numero int)string{
 	var diaDaSemana string

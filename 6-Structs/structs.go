@@ -7,7 +7,8 @@ import "fmt"
 
 
 
-//Um struct pode ser criado e não utilizado
+//Um struct pode ser criado e não utilizado 
+//ele é inicializado com "type nomedostruct struct"
 
 type usuario struct {
 	nome string
@@ -25,7 +26,7 @@ func main(){
 
 
 	var u usuario
-	fmt.Println(u)  //exibe os valores "ZERO" string vazia e numero zero
+	fmt.Println(u)  //exibe os valores "ZERO" { 0} { 0}}
 	u.nome = "Fernando"
 	u.idade = 29
 	fmt.Println(u)
