@@ -1,0 +1,10 @@
+Executar um arquivo
+go run nomedoarquivo.go
+
+
+Criar um novo modulo
+go mod init nomemodulo
+
+
+baixar pacote
+go get github....nomedopacote
