@@ -8,3 +8,22 @@ go mod init nomemodulo
 
 baixar pacote
 go get github....nomedopacote
+
+
+
+go test    ou    go test -v
+roda os testes no pacote selecionado
+
+go test ./...
+roda todos os testes da pasta selecionada (de todos os pacotes)
+
+
+go test --cover
+mostra a porcentagem de cobertura dos testes (todas as funções no pacote e todas as possibilidades)
+
+
+go test --coverprofile resultado.txt
+mostra o resultado e salva em um arquivo
+
+go tool cover --func=resultado.txt
+le o relatorio de testes salvo anteriormente

@@ -26,7 +26,7 @@ func main() {
 
 	for {
 
-		select {
+		select { //caso um esteja pronto para receber, recebe, uma função não precisa espera a anterior terminar para executar
 		case mensagemCanal1 := <-canal1:
 			fmt.Println(mensagemCanal1)
 
