@@ -1,0 +1,10 @@
+{
+  "nome": "Fernando",
+  "idade": 29,
+  "cursos": [
+    {
+      "nome": "Análise e Desenvolvimento de Sistemas",
+      "ano": 2019
+    }
+  ]
+}
