@@ -27,3 +27,48 @@ mostra o resultado e salva em um arquivo
 
 go tool cover --func=resultado.txt
 le o relatorio de testes salvo anteriormente
+
+
+instalar mysql
+primeiro faz o sudo apt-get update
+sudo apt-get install mysql-server
+sudo mysql_secure_installation utility    configuração
+plugin de validar senhas - no
+new password - coloque a senha root (use pouco, não é recomendado)
+anonymous users? yes
+root login remotely? no
+remove test database yes
+reload privileges yes
+
+sudo systemctl start mysql - start no banco
+sudo systemctl enable mysql - start no banco quando liga o pc
+
+
+
+sudo mysql -u root -p
+digite a senha do root
+ entrar no mysql
+
+sempre com ; no final
+
+show databases; - mostra os bancos
+CREATE DATABASE devbook; - cria um banco com o nome de devbook
+USE devbook; - usa o banco selecionado
+CREATE TABLE usuarios (
+  id int auto_increment primary key,
+  nome varchar(50) not null,
+  email varchar(50) not null
+) ENGINE=INNODB;
+
+show tables mostra tabelas
+
+
+CREATE USER 'golang'@'localhost' IDENTIFIED BY 'golang';
+GRANT ALL PRIVILEGES ON devbook.* TO 'golang'@'localhost'
+
+exit = sai do mysql
+
+mysql -u golang -p (digite a senha)
+
+
+
