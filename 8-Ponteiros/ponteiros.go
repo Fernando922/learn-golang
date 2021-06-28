@@ -6,6 +6,7 @@ import (
 )
 
 //variavel que salva endereço de memória de alguma coisa
+//ponteiro = endereço
 
 
 
@@ -24,7 +25,6 @@ func main(){
 	//PONTEIRO É UMA REFERENCIA DE MEMORIA
 	//VOCE ATRIBUI A REFERENCIA DE MEMÓRIA ONDE A VARIÁVEL ESTÁ SALVA
 	//ENTÃO SE UM VALOR ALTERAR, NA OUTRA VARIÁVEL TB VAI ALTERAR
-
 	var variavel3 int  //0 
 
 	//para tipar um novo ponteiro, ele deve deve ter o *antes do tipo
@@ -46,7 +46,18 @@ func main(){
 
 	variavel3 = 150
 	fmt.Println(variavel3, ponteiro)  //150 0xc0000b6038 (endereço de memória sempre será exibido sem o asterisco vai manter)
-	fmt.Println(variavel3, *ponteiro, *ponteiro2, *ponteiro3, *ponteiro4)  //150 150 150
+	fmt.Println(variavel3, *ponteiro, *ponteiro2, *ponteiro3, *ponteiro4)  //150 150 150 Fernando alterado
+
+
+	/*
+	um ponteiro só guarda o endereço da variável que quero usar e não
+	o valor dela. Se eu quero um ponteiro que aponte para uma variavel do tipo string eu faço assim
+	var ponteiroString *string = &variavelQueTemString
+	
+	uma variável do tipo ponteiro, só recebe ponteiros, eu nao posso adicionar um novo valor para ela
+	esperando que eu vá atualizar o valor da variável original
+	
+	*/
 
 
 
